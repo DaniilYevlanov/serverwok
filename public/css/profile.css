@@ -1,0 +1,92 @@
+.level-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.level-card.completed {
+    background: #e8f5e9;
+    border-left: 4px solid #4caf50;
+}
+
+.complete-level-btn {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.complete-level-btn:hover {
+    background: #388e3c;
+}
+
+.completion-time {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 8px;
+}
+
+.levels-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.profile-actions {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.game-button, .reset-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.game-button {
+    background: #4CAF50;
+    color: white;
+}
+
+.game-button:hover {
+    background: #45a049;
+}
+
+.reset-button {
+    background: #f44336;
+    color: white;
+}
+
+.reset-button:hover {
+    background: #d32f2f;
+}
+
+.logout-button {
+    background: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.logout-button:hover {
+    background: #f57c00;
+} 

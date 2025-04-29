@@ -1,0 +1,131 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "$2a$10$qRawPzA5GxoZcYIW8hC2buc06AmJSXEoC9Yxixyqq45vw8fUHIBJG",
+      "registrationDate": "29.04.2025",
+      "levels": [
+        {
+          "level": 1,
+          "completed": true,
+          "completionTime": "00.02",
+          "completionDate": "2025-04-29T11:35:30.272Z"
+        },
+        {
+          "level": 2,
+          "completed": true,
+          "completionTime": "00.06",
+          "completionDate": "2025-04-29T11:35:36.158Z"
+        },
+        {
+          "level": 3,
+          "completed": true,
+          "completionTime": "00.02",
+          "completionDate": "2025-04-29T11:48:25.816Z"
+        },
+        {
+          "level": 4,
+          "completed": false,
+          "completionTime": null,
+          "completionDate": null
+        },
+        {
+          "level": 5,
+          "completed": false,
+          "completionTime": null,
+          "completionDate": null
+        },
+        {
+          "level": 6,
+          "completed": false,
+          "completionTime": null,
+          "completionDate": null
+        },
+        {
+          "level": 7,
+          "completed": false,
+          "completionTime": null,
+          "completionDate": null
+        },
+        {
+          "level": 8,
+          "completed": false,
+          "completionTime": null,
+          "completionDate": null
+        },
+        {
+          "level": 9,
+          "completed": false,
+          "completionTime": null,
+          "completionDate": null
+        },
+        {
+          "level": 10,
+          "completed": false,
+          "completionTime": null,
+          "completionDate": null
+        }
+      ]
+    },
+    {
+      "username": "admin1",
+      "password": "$2a$10$gbbE2PE8lEvNabGyedbkDeFgNtK6wsQVppoIFqXaHAvLs.KWdbJCS",
+      "registrationDate": "29.04.2025",
+      "levels": [
+        {
+          "level": 1,
+          "completed": true,
+          "completionTime": "14:24:37",
+          "completionDate": "2025-04-29T11:24:37.825Z"
+        },
+        {
+          "level": 2,
+          "completed": true,
+          "completionTime": "14:24:42",
+          "completionDate": "2025-04-29T11:24:42.243Z"
+        },
+        {
+          "level": 3,
+          "completed": true,
+          "completionTime": "14:24:47",
+          "completionDate": "2025-04-29T11:24:47.140Z"
+        },
+        {
+          "level": 4,
+          "completed": false,
+          "completionTime": null
+        },
+        {
+          "level": 5,
+          "completed": false,
+          "completionTime": null
+        },
+        {
+          "level": 6,
+          "completed": false,
+          "completionTime": null
+        },
+        {
+          "level": 7,
+          "completed": false,
+          "completionTime": null
+        },
+        {
+          "level": 8,
+          "completed": false,
+          "completionTime": null
+        },
+        {
+          "level": 9,
+          "completed": false,
+          "completionTime": null
+        },
+        {
+          "level": 10,
+          "completed": false,
+          "completionTime": null
+        }
+      ]
+    }
+  ]
+}

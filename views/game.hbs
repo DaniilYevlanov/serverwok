@@ -1,0 +1,26 @@
+<div class="game-container">
+    <div class="game-header">
+        <h1>Математична гра</h1>
+        <div class="header-controls">
+            <div class="timer">Час: <span id="timer">00:00</span></div>
+            <a href="/profile" class="exit-button">Вийти з гри</a>
+        </div>
+    </div>
+
+    <div class="game-content">
+        <div class="level-info">
+            <h2>Рівень <span id="current-level">1</span></h2>
+            <div class="score">Очки: <span id="score">0</span></div>
+        </div>
+
+        <div class="math-problem">
+            <div id="problem" class="problem-text"></div>
+            <input type="number" id="answer" class="answer-input" placeholder="Введіть відповідь">
+            <button id="check-answer" class="check-button">Перевірити</button>
+        </div>
+
+        <div id="result" class="result-message"></div>
+    </div>
+</div>
+
+<script src="/js/game.js"></script> 

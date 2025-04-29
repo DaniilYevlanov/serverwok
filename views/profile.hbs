@@ -1,0 +1,75 @@
+<div class="profile-container">
+    <div class="user-info">
+        <h1>Профіль користувача</h1>
+        <p>Ім'я користувача: {{user.username}}</p>
+        <p>Дата реєстрації: {{user.registrationDate}}</p>
+        <div class="profile-actions">
+            <a href="/game" class="game-button">Почати гру</a>
+            <button onclick="resetLevels()" class="reset-button">Скинути всі рівні</button>
+            <a href="/logout" class="logout-button">Вийти з аккаунту</a>
+        </div>
+    </div>
+
+    <div class="levels-container">
+        {{#each user.levels}}
+        <div class="level-card {{#if completed}}completed{{/if}}" data-level="{{this.level}}">
+            <h3>Рівень {{this.level}}</h3>
+            <p>Статус: {{#if completed}}Завершено{{else}}Не завершено{{/if}}</p>
+            {{#if completed}}
+                <p class="completion-time">Завершено: {{this.completionDate}}</p>
+                <p class="completion-time">Час проходження: {{this.completionTime}}</p>
+            {{else}}
+                <button class="complete-level-btn" onclick="completeLevel({{this.level}})">Завершити рівень</button>
+            {{/if}}
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+<script>
+async function completeLevel(level) {
+    try {
+        const response = await fetch('/api/complete-level', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ level })
+        });
+
+        if (response.ok) {
+            location.reload();
+        } else {
+            alert('Помилка при завершенні рівня');
+        }
+    } catch (error) {
+        console.error('Помилка:', error);
+        alert('Помилка при завершенні рівня');
+    }
+}
+
+async function resetLevels() {
+    if (!confirm('Ви впевнені, що хочете скинути всі рівні?')) {
+        return;
+    }
+
+    try {
+        const response = await fetch('/api/reset-levels', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${localStorage.getItem('token')}`
+            }
+        });
+
+        if (response.ok) {
+            location.reload();
+        } else {
+            alert('Помилка при скиданні рівнів');
+        }
+    } catch (error) {
+        console.error('Помилка:', error);
+        alert('Помилка при скиданні рівнів');
+    }
+}
+</script> 
